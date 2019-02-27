@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Movie Nite</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+
+</head>
+
+<body>
+  <!-- created session room -->
+  <h2>Create a movie night theater to create Admission Ticket!</h2>
+  <button id="createession">Create Theater</button>
+
+  <!-- invite people to session with the url -->
+  <p>You've now created a Theater! The URL below can be used by your friends as a ticket to your theater</p>
+  <input id="share-ticket-url" type="text" readonly="true">
+
+  <!-- phone call button -->
+  <p>Open a phone call with your friend</p>
+  <button id="phone-call">Phone A Friend</button>
+
+  <!-- phone preferences -->
+  <label>
+    <input type="checkbox" id="call-preference">Show Call Preferences
+  </label>
+
+  <!-- close session -->
+  <p>
+    <button id="close-session" type="button">Close Theater</button>
+  </p>
+</body>
+
+</html>
